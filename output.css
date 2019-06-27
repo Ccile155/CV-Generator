@@ -34,7 +34,7 @@
 }
 .email-data, .address-data, .phone-data {
     color: #AFB4B7;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 14px;
     font-family: 'Lato';
     font-weight: 500;
@@ -47,12 +47,15 @@
     color: #AFB4B7;
 }
 
+.column-right, .column-left {
+    padding-top: 10px;
+}
 .forwords {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 5px;
 }
 
-.experiences {
+.experiences, .component {
     padding-top: 10px;
 }
 .forwords-data {
@@ -61,23 +64,23 @@
     padding: 12px 14px 5px 14px;
     font-style: italic;
     color: #777;
-    font-size: 11px;
+    font-size: 12px;
     font-family: 'Lato';
     font-weight: 500;
 }
 
 
-.exp {
+.exp, .comp-items {
     padding-left: 20px;
     padding-top: 5px;
 }
 
-.exp-header {
+.exp-header, .comp-header {
     padding: 6px;
     border-bottom: 1px solid #0098cf;
 }
 
-.exp-header-data {
+.exp-header-data, .comp-header-data {
     color: #0098cf;
     font-size: 15px;
     line-height: 19px;
@@ -86,30 +89,27 @@
     word-wrap: break-word;
 }
 
-
-.exp-role-data, .exp-company-data {
+.exp-role-data, .comp-item-field-data {
     padding: 1px;
-}
-
-.exp-role-data {
     color: #000;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 14px;
     font-family: 'Lato';
 }
 
 .exp-company-data {
+    padding: 1px;
     color: #0098cf;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 14px;
     font-family: 'Lato';
     font-weight: 500;
 }
 
-.exp-place-data, .exp-from-data, .exp-to-data {
+.exp-place-data, .exp-from-data, .exp-to-data, .comp-item-value-data {
     padding: 1px;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 14px;
     font-family: 'Lato';
     font-weight: 500;
@@ -120,7 +120,7 @@
 }
 
 .exp-description-data {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 14px;
     font-family: 'Lato';
     font-weight: 500;
