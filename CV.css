@@ -4,19 +4,62 @@
 
 h1{
 	color: #30A2B8;
+	text-shadow: 0px 0px 1px black;
 /*	color: tomato;*/
 }
 
-img.d-block{
-	padding-left:320px;
+nav{
+	border: 1px solid black;
 }
+
+#templateDisplay{
+	justify-content: center;
+}
+
+
+.bd-example{
+	background-color: #6C757D;
+	width: 700px;
+	border: 1px solid black;
+}
+
+
+img.d-block{
+	margin-left: 175px;
+}
+
+h5{
+	background-color: rgba(255 255 255 0.2);
+	color:black;
+}
+
+p{
+	color:black;
+}
+
+li{
+	color:black;
+	background-color: black !important;
+}
+
+.carousel-control{
+	background-color: black !important;
+}
+
 
 footer{
 	background-color: #30A2B8;
+	border: 1px solid black;
 /*	background-color: tomato;*/
 }
 
-.foot{
+#foot1{
+	padding-left: 25px;
+}
+#foot2{
+	padding-right: 25px;
+}
+#foot3{
 	justify-content: center;
 	text-align: center;
 }

@@ -28,7 +28,7 @@
 
 	</header>
 
-		<div class="spacer" id="templateDisplay">
+		<div class="spacer row" id="templateDisplay">
 			
 				<div class="bd-example">
 				  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -39,21 +39,21 @@
 				    </ol>
 				    <div class="carousel-inner">
 				      <div class="carousel-item active" data-interval="10000">
-				        <img src="Image/CV1.png" class="d-block w-30" alt="CV1 Swiss">
+				        <img src="Image/CV1.png" class="d-block w-50" alt="CV1 Swiss">
 				        <div class="carousel-caption d-none d-md-block">
 				          <h5>CV Swiss</h5>
 				          <p>Sérieux et dynamique</p>
 				        </div>
 				      </div>
 				      <div class="carousel-item" data-interval="10000">
-				        <img src="Image/CV2.png" class="d-block w-30" alt="CV2 Serif">
+				        <img src="Image/CV2.png" class="d-block w-50" alt="CV2 Serif">
 				        <div class="carousel-caption d-none d-md-block">
 				          <h5>CV Serif</h5>
 				          <p>Sobre et efficace</p>
 				        </div>
 				      </div>
 				      <div class="carousel-item" data-interval="10000">
-				        <img src="Image/CV3.png" class="d-block w-30" alt="CV3 Spearmint">
+				        <img src="Image/CV3.png" class="d-block w-50" alt="CV3 Spearmint">
 				        <div class="carousel-caption d-none d-md-block">
 				          <h5>CV Spearmint</h5>
 				          <p>Vif et innovant</p>
@@ -61,11 +61,11 @@
 				      </div>
 				    </div>
 				    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-				      <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+				      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				      <span class="sr-only">Previous</span>
 				    </a>
 				    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-				      <span class="carousel-control-next-icon" aria-hidden="false"></span>
+				      <span class="carousel-control-next-icon" aria-hidden="true"></span>
 				      <span class="sr-only">Next</span>
 				    </a>
 				  </div>
@@ -81,14 +81,25 @@
 
 	<footer class="spacer">
 		<div class="row">
-			<div class="col-6 foot" style="padding: 20px 0px 0px 150px;">
+<!-- 			<div class="col-6 foot" style="padding: 20px 0px 0px 150px;">
 				<p>Qui sommmes nous ?</p>
 			</div>
 			<div class="col-6 foot" style="padding: 20px 150px 0px 0px;">
 				<p>Contact</p>
 			</div>
-		</div>
-		<div class="row foot">
+		</div> -->
+				<div class="spacer col-sm-3 col-md-6">
+					<p id="foot1">Qui sommes-nous ?<br>Contact</p>
+				</div>
+				
+				<div class="spacer col-sm-3 col-md-6" id="foot2">
+					<image class="image float-right" nom="LogoGitHub" src=../Images/LogoGithub.png alt="LogoGitHub" title="LogoGitHub" style="margin-right:10px;"/>
+					<image class="image float-right" nom="LogoMozilla" src=../Images/LogoMozilla.png alt="LogoMozilla" title="LogoMozilla"  style="margin-right:10px;"/>
+					<image class="image float-right" nom="LogoPouce" src=../Images/LogoPouce.png alt="LogoPouce" title="LogoPouce" style="margin-right:10px;"/>
+				</div>
+			</div>
+
+		<div class="row" id="foot3">
 			<p>&copy 2019 CV2Geny - Tous droits réservés - Mentions Légales - Confidentialité</p>
 		</div>
 	</footer>
