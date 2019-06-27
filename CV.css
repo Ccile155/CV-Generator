@@ -1,0 +1,19 @@
+.spacer{
+	margin-top:20px;
+}
+
+h1{
+	color: #30A2B8;
+/*	color: tomato;*/
+}
+
+
+footer{
+	background-color: #30A2B8;
+/*	background-color: tomato;*/
+}
+
+.foot{
+	justify-content: center;
+	text-align: center;
+}
