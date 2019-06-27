@@ -7,6 +7,9 @@ h1{
 /*	color: tomato;*/
 }
 
+img.d-block{
+	padding-left:250px;
+}
 
 footer{
 	background-color: #30A2B8;
