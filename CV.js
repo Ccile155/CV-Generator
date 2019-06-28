@@ -22,7 +22,13 @@ $(function(){
 				$(".navbar.navbar-expand-lg").addClass("navbar-light bg-light");
 				$("a").css("color", "black");			
 				// $(".navbar").css("background-color", "#E5E5E5");
-				$("footer").css("background-color", "#E5E5E5");
+				$("footer").css("background-color", "#F8F9FA");
+				break;
+			case "mint":
+				// $(".navbar.navbar-expand-lg").addClass("navbar-light bg-light");
+				// $("a").css("color", "black");			
+				$(".navbar").css("background-color", "#ccffee");
+				$("footer").css("background-color", "#ccffee");
 				break;
 		}
 
@@ -38,6 +44,8 @@ $(function(){
 	$("#light").on("click", function(){
 		changeColor("light");
 	});
-
+	$("#mint").on("click", function(){
+		changeColor("mint");
+	});
 
 });
