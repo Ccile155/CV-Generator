@@ -13,8 +13,8 @@
 <body>
     <form>
 
-        <div class="outerdiv">
-            <div class="heading">
+        <div class="container">
+            <div id="heading">
                 <div class="form-heading">
                     <label for="formGroupExampleInput">Name</label>
                     <div class="row">
@@ -37,7 +37,7 @@
                         placeholder="years of experience and expertise">
                 </div>
             </div>
-            <div class="aboutme">
+            <div id="aboutme">
                 <!-- <div class="form-group">
                         <label for="exampleTextarea">About Me</label>
                         <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
@@ -51,9 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div class="experience-pro">
-
-
+            <div id="experience-pro">
                 <h4>Professional Experience</h4>
                 <div class="input-container">
                     <div class="inline-content">
@@ -83,13 +81,13 @@
                     </div>
                 </div>
             </div>
-            <div class="competences">
+            <div id="competences">
                 <h4>COMPETENCES</h4>
             </div>
-            <div class="formation">
+            <div id="formation">
                 <h4>FORMATION</h4>
             </div>
-            <div class="infos">
+            <div id="infos">
                 <h4>INFOS</h4>
                 <div class="form-group row">
                     <label for="example-text-input" class="col-2 col-form-label">Text</label>
@@ -118,28 +116,26 @@
                         <input type="text" class="form-control" id="inputAddress2"
                             placeholder="Apartment, studio, or floor">
                     </div>
-                
-                        <div class="form-group col-md-2">
-                            <label for="inputZip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                    
 
-                </div>
-                <div class="infos">
-                    <h4>CENTRES D'INTÉRÊTS</h4>
-                    <div class="col-sm-4 well">
-                        <textarea class="form-control" id="text" name="text" placeholder="Type in your message"
-                            rows="3">
-                            </textarea>
-                        <h6 class="pull-right" id="count_message3"></h6>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
                     </div>
                 </div>
             </div>
+            <div id="hobies">
+                <h4>CENTRES D'INTÉRÊTS</h4>
+                <div class="col-sm-4 well">
+                    <textarea class="form-control" id="text" name="text" placeholder="Type in your message" rows="3">
+                            </textarea>
+                    <h6 class="pull-right" id="count_message3"></h6>
+                </div>
+            </div>
+        </div>
     </form>
 
 
@@ -154,7 +150,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="form.js"></script>
 </body>
 
 </html>
