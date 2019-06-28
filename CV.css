@@ -34,26 +34,32 @@ img.d-block{
 	margin-left: 175px;
 }
 
-h5{
+h5{	
 	background-color: rgba(255 255 255 0.2);
 	color:black;
+	position: absolute;
+	top: 0px; left: -90px;
 }
 
-p{
-	color:black;
-}
 
-#templateDisplay[li]{
-	color:black;
+/*.bd-example[li]{
+    background-color: black !important;
+}*/
+
+/*.carousel-control{
 	background-color: black !important;
+}*/
+
+.comment{
+	font-style: italic;
+	color:black !important;
+	position: absolute;
+	top: 25px; left: -90px;
 }
 
-.carousel-control{
-	background-color: black !important;
+footer,a{
+	color: black ! important;
 }
-
-a{color: black;}
-
 
 footer{
 /*	background-color: #30A2B8;*/
