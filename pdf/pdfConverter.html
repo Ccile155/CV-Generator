@@ -1,0 +1,218 @@
+<html>
+
+<head>
+    <meta charset="utf-8">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://printjs-4de6.kxcdn.com/print.min.css">
+    <link rel="stylesheet" href="pdfConverter.css">
+</head>
+
+<body>
+
+    <button type="button" onclick="printJS({
+        printable: 'mainContainer',
+        type:'html',
+        css: 'pdfConverter.css',
+        scanStyles: true,
+        showModal: true,
+        targetStyles: ['*']
+    })">
+        Print Form
+    </button>
+
+    <div class="container page" id="mainContainer">
+        <div class="row header">
+            <div class="col info-person">
+                <div class="container">
+                    <div class="row">
+                        <span class="first-name-data"> First name </span>
+                        <span class="last-name-data"> &nbsp; Last name </span>
+                    </div>
+                    <div class="row">
+                        <span class="role-title-data"> Role </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col info-localization">
+                <div class="container">
+                    <div class="row">
+                        <span class="email-icon"><i class="material-icons">email</i>  </span>
+                        <span class="email-data"> youremail@domain.abc </span>
+                    </div>
+                    <div class="row">
+                        <span class="address-icon"><i class="material-icons">location_on</i>  </span>
+                        <span class="address-data"> Number Road, 99999, Town, Country </span>
+                    </div>
+                    <div class="row">
+                        <span class="phone-icon"> <i class="material-icons">smartphone</i> </span>
+                        <span class="phone-data"> +99 9 99 99 99 99 </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row body">
+            <div class="col column-left">
+                <div class="container forwords">
+                    <span class="forwords-data">I am a nice, friendly person who is adored by everyone!</span>
+                </div>
+                <div class="container experiences">
+                    <div class = "container exp-header">
+                        <span class="exp-header-data">
+                            Professional experiences
+                        </span>                        
+                    </div>
+                    <div class="container exp">
+                        <div class="row exp-title">
+                            <span class="exp-role-data"> Job role </span>
+                            <span class="exp-company-data"> Company </span>
+                        </div>
+                        <div class="row exp-time-place">
+                            <span class="exp-from-data"> From Year</span>
+                            <span class="exp-to-data"> to Year</span>
+                            <span class="exp-place-data"> City, Country </span>
+                        </div>
+                        <div class="row exp-description">
+                            <span class="exp-description-data">
+                                What you have done in the job.
+                                <br>
+                                What you have achieved in the job.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="container exp">
+                        <div class="row exp-title">
+                            <span class="exp-role-data"> Job role </span>
+                            <span class="exp-company-data"> Company </span>
+                        </div>
+                        <div class="row exp-time-place">
+                            <span class="exp-from-data"> From Year</span>
+                            <span class="exp-to-data"> to Year</span>
+                            <span class="exp-place-data"> City, Country </span>
+                        </div>
+                        <div class="row exp-description">
+                            <span class="exp-description-data">
+                                What you have done in the job.
+                                <br>
+                                What you have achieved in the job.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container experiences">
+                    <div class = "container exp-header">
+                        <span class="exp-header-data">
+                            Education
+                        </span>                        
+                    </div>
+                    <div class="container exp">
+                        <div class="row exp-title">
+                            <span class="exp-role-data"> Degree title </span>
+                            <span class="exp-company-data"> &nbsp; Institute </span>
+                        </div>
+                        <div class="row exp-time-place">
+                            <span class="exp-from-data"> From Year</span>
+                            <span class="exp-to-data"> &nbsp;to Year</span>
+                            <span class="exp-place-data"> &nbsp;City, Country </span>
+                        </div>
+                        <div class="row exp-description">
+                            <span class="exp-description-data">
+                                What you have done in the degree.
+                                <br>
+                                What you have achieved in the degree.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="container exp">
+                        <div class="row exp-title">
+                            <span class="exp-role-data"> Degree title </span>
+                            <span class="exp-company-data"> Institute </span>
+                        </div>
+                        <div class="row exp-time-place">
+                            <span class="exp-from-data"> From Year</span>
+                            <span class="exp-to-data"> to Year</span>
+                            <span class="exp-place-data"> City, Country </span>
+                        </div>
+                        <div class="row exp-description">
+                            <span class="exp-description-data">
+                                What you have done in the degree.
+                                <br>
+                                What you have achieved in the degree.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col column-right">
+                <div class="container component">
+                    <div class="container comp-header">
+                        <span class="comp-header-data">Technical skills</span>                        
+                    </div>
+                    <div class="container comp-items">
+                        <div class="row comp-item">
+                            <span class="comp-item-field-data">Web development:</span>
+                            <span class="comp-item-value-data">html, css, javascript</span>
+                        </div>
+                    </div>
+                    <div class="container comp-items">
+                        <div class="row comp-item">
+                            <span class="comp-item-field-data">Programming languages:</span>
+                            <span class="comp-item-value-data">Java, Python</span>
+                        </div>
+                    </div>
+                    <div class="container comp-items">
+                        <div class="row comp-item">
+                            <span class="comp-item-field-data">Management:</span>
+                            <span class="comp-item-value-data">Git, Slack, Trello</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container component">
+                    <div class="container comp-header">
+                        <span class="comp-header-data">Languages</span>                        
+                    </div>
+                    <div class="container comp-items">
+                        <div class="row comp-item">
+                            <span class="comp-item-field-data">English:</span>
+                            <span class="comp-item-value-data">level</span>
+                        </div>
+                    </div>
+                    <div class="container comp-items">
+                        <div class="row comp-item">
+                            <span class="comp-item-field-data">French:</span>
+                            <span class="comp-item-value-data">level</span>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="container component">
+                    <div class="container comp-header">
+                        <span class="comp-header-data">Hobbies</span>                        
+                    </div>
+                    <div class="container comp-items">
+                        <div class="row comp-item">
+                            <span class="comp-item-field-data">Physical activities</span>
+                            <span class="comp-item-value-data">football, tennis, hiking</span>
+                        </div>
+                    </div>
+                    <div class="container comp-items">
+                        <div class="row comp-item">
+                            <span class="comp-item-field-data">Mental activities</span>
+                            <span class="comp-item-value-data">yoga, meditation, reading</span>
+                        </div>
+                    </div>                      
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script> 
+</body>
+</html>
