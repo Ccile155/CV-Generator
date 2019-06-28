@@ -1,33 +1,33 @@
 
 @media (min-width: 992px)
-.containerx {
+.container {
     max-width: 960px;
 }
 
 @media (min-width: 768px)
-.containerx {
+.container {
     max-width: 720px;
 }
 
 @media (min-width: 576px)
-.containerx {
+.container {
     max-width: 540px;
 }
 
-.containerx {
+.container {
     width: 95%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
-.rowx {
+.row {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.colx {
+.col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
@@ -40,8 +40,6 @@
     box-shadow: 0 0 20px rgba(0,0,0,.1);
     background-color: #fff;
 }
-
-
 .header {
     background-color: #406A8C;
     padding: 38px 19px 19px 19px
@@ -164,6 +162,3 @@
     font-weight: 500;
 }
 
-span {
-    padding: 3px;
-}

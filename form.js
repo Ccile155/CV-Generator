@@ -27,3 +27,12 @@ $('#text').keyup(function() {
   
   $('#count_message3').html(text_remaining + ' remaining');
 });
+
+
+
+$(document).ready(function(){
+  $("#submitBtn").click(function(){        
+      $("#myForm").submit(); 
+  });
+});
+  
