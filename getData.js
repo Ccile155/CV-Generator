@@ -19,22 +19,33 @@ $(function() {
 
                             //RETRAVING PROFESSIONAL EXPERIENCE INFORMATION
 
-                            //RETRAVING TECHNICAL SKILLS INFORMATION
-                            for(var i = 0; i < (data.components).length; i++){
+                            //RETRAVING LEFT COLUMN INFORMATION
+                            if((data.components).length > 0){
 
-                                   var arr = data.components[i];
+                                   for(var i = 0; i < (data.components).length; i++){
 
-                                   if(arr["comp-header"] === "Technical skills"){
-                                          //alert("HERE");
+                                          var generalSkill = data.components[i];
+
+                                          $(".col.column-right").append('<div class="container component"></div>');
+                                          $(".container.component").append('<div class="container comp-header"></div>');
+
+                                          $(".container.comp-header").append('<span class="comp-header-data">'+ generalSkill["comp-header"] +'</span>');
+                                          
+                                          var tmp = generalSkill["comp-items"];
+
+                                          for(var i = 0; i < tmp.length; i++){
+
+                                                 var detailSkill = tmp[i];
+       
+                                                 $(".container.component").append('<div class="container comp-items"></div>');
+                                                 $(".container.comp-items").append('<div class="row comp-item"></div>');
+                                                 
+                                                 $(".row.comp-item").append('<span class="comp-item-field-data">'+ detailSkill["comp-item-field"] +'</span>');
+                                                 $(".row.comp-item").append('<span class="comp-item-value-data">'+ detailSkill["comp-item-value"] +'</span>');
+                                          }
                                    }
-                                   else if(arr["comp-header"] === "Languages"){
-                                          alert("HERE");
-                                   }
-                                   else if(arr["comp-header"] === "Hobbies"){
-                                          alert("HERE");
-                                   }
-                                   
                             }
+
 
 /*                             $(".last").append(data["last"]);
                             $(".last").append(data["last"]);
