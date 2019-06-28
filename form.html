@@ -10,7 +10,36 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="CV.html"><img src="Image/logoCV.png" style="height:40px;">CV Creator</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Formulaire</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="output.html">Mon CV</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Couleurs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#" id="info"><img src="Image/info.png" alt="info" style="height:15px;"> Info</a>
+                  <a class="dropdown-item" href="#" id="mint"><img src="Image/mint.png" alt="light"> Mint</a>
+                  <a class="dropdown-item" href="#" id="warning"><img src="Image/warning.png" alt="warning" style="height:15px;"> Warning</a>
+                  <a class="dropdown-item" href="#" id="light"><img src="Image/light.png" alt="light"> Light</a>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
     <form id="myform">
 
         <div class="container">
@@ -190,7 +219,23 @@
 
     </form>
 
+    <footer class="spacer">
+        <div class="row">
+                <div class="spacer col-sm-3 col-md-6">
+                    <a href="https://fr.wikipedia.org/wiki/Bisounours" target="_blank"><p id="foot1">Qui sommes-nous ?</a><br><a href="https://slack.com" target="_blank">Contact</p></a>
+                </div>
+                
+                <div class="spacer col-sm-3 col-md-6" id="foot2">
+                    <a href="https://github.com/" target="_blank"><image class="image float-right" nom="LogoGitHub" src=Image/LogoGithub.png alt="LogoGitHub" title="LogoGitHub" style="margin-right:10px;"/></a>
+                    <a href="https://developer.mozilla.org/fr/" target="_blank"><image class="image float-right" nom="LogoMozilla" src=Image/LogoMozilla.png alt="LogoMozilla" title="LogoMozilla"  style="margin-right:10px;"/></a>
+                    <a href="https://www.youtube.com/watch?v=tFOaxRu5afo" target="_blank"><image class="image float-right" nom="LogoPouce" src=Image/LogoPouce.png alt="LogoPouce" title="LogoPouce" style="margin-right:10px;"/></a>
+                </div>
+            </div>
 
+        <div class="row" id="foot3">
+            <p>&copy 2019 CV2Geny - Tous droits réservés - Mentions Légales - Confidentialité</p>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -203,6 +248,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="form.js"></script>
+    <!-- Javascript Ccile-->
+<script type="text/javascript" src="CV.js"></script>
 </body>
 
 </html>
