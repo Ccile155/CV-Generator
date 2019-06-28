@@ -11,34 +11,38 @@
 </head>
 
 <body class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="CV.html"><img src="Image/logoCV.png" style="height:40px;">CV Creator</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="CV.html"><img src="Image/logoCV.png" style="height:40px;">CV Creator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="form.html">Formulaire</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="output.html">Mon CV</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Couleurs
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#" id="info"><img src="Image/info.png" alt="info" style="height:15px;"> Info</a>
-                  <a class="dropdown-item" href="#" id="mint"><img src="Image/mint.png" alt="light"> Mint</a>
-                  <a class="dropdown-item" href="#" id="warning"><img src="Image/warning.png" alt="warning" style="height:15px;"> Warning</a>
-                  <a class="dropdown-item" href="#" id="light"><img src="Image/light.png" alt="light"> Light</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Formulaire</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="output.html">Mon CV</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Couleurs
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#" id="info"><img src="Image/info.png" alt="info"
+                                style="height:15px;"> Info</a>
+                        <a class="dropdown-item" href="#" id="mint"><img src="Image/mint.png" alt="light"> Mint</a>
+                        <a class="dropdown-item" href="#" id="warning"><img src="Image/warning.png" alt="warning"
+                                style="height:15px;"> Warning</a>
+                        <a class="dropdown-item" href="#" id="light"><img src="Image/light.png" alt="light"> Light</a>
 
-                </div>
-              </li>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </nav>
+        </div>
+    </nav>
 
     <form id="myform">
 
@@ -51,186 +55,212 @@
                             <input type="text" id="firstname" class="form-control firstname" placeholder="First name">
                         </div>
                         <div class="col">
-                            <input type="text" id="lastname"  class="form-control lastname" placeholder="Last name">
+                            <input type="text" id="lastname" class="form-control lastname" placeholder="Last name">
                         </div>
                     </div>
                 </div>
                 <div class="form-heading">
-                    <label for="formGroupExampleInput">Job Title</label>
-                    <input type="text" class="form-control jobtitle" id="jobtitle"  placeholder="Example Developpeur">
+                    <label for="formGroupExampleInput">Role</label>
+                    <input type="text" class="form-control role" id="jobtitle" placeholder="Example Developpeur">
                 </div>
-                <div class="form-heading">
-                    <label for="formGroupExampleInput2">Description</label>
-                    <input type="text" class="form-control expertise" id="expertise" 
-                        placeholder="years of experience and expertise">
-                </div>
-            </div>
-            <div id="aboutme">
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">About me</label>
-                    <div class="col-sm-4 well">
-                        <textarea class="form-control aboutme" id="aboutme" name="text" 
-                            placeholder="Type in your message" rows="3"></textarea>
-                        <h6 class="pull-right" id="count_message1"></h6>
-                    </div>
-                </div>
-            </div>
-            <div id="experience-pro">
-                <h4>Professional Experience</h4>
-                <div class="input-container">
+                <br>
+
+                <div id="info">
                     <div class="form-group row">
-                        <label for="example-text-input" class="col-2 col-form-label">Role</label>
+                        <label for="example-email-input" class="col-2 col-form-label">Email</label>
                         <div class="col-10">
-                            <input class="form-control role" type="text" value="Artisanal kale" id="example-text-input">
+                            <input class="form-control email" type="email" value="bootstrap@example.com"
+                                id="example-email-input">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="example-text-input" class="col-2 col-form-label">company</label>
+                        <label for="example-tel-input" class="col-2 col-form-label">Phone number</label>
                         <div class="col-10">
-                            <input class="form-control company" type="text" value="Artisanal kale"
-                                id="example-text-input">
+                            <input class="form-control phonenumber" type="number" placeholder="Enter Mobile number"
+                                id="example-tel-input">
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label for="example-tel-input" class="col-2 col-form-label">Address</label>
+                        <div class="col-10">
+                            <input class="form-control address" type="number" placeholder="25 Main ST 56621 NYC"
+                                id="example-tel-input">
+                        </div>
+                    </div>
+                </div>
+                <div id="aboutme">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"></label>
+                        <div class="col-sm-4 well">
+                            <textarea class="form-control forwards" id="forwards" name="text" placeholder="About me"
+                                rows="3"></textarea>
+                            <h6 class="pull-right" id="count_message1"></h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="experience-pro">
+                    <h4>Professional Experiences</h4>
+                    <div class="input-container">
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-2 col-form-label">Role</label>
+                            <div class="col-10">
+                                <input class="form-control exp-role" type="text" value="Artisanal kale"
+                                    id="example-text-input">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-2 col-form-label">company</label>
+                            <div class="col-10">
+                                <input class="form-control exp-company" type="text" value="Artisanal kale"
+                                    id="example-text-input">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-month-input" class="col-2 col-form-label">Start Date</label>
+                            <div class="col-10">
+                                <input class="form-control exp-start-date" value="2011-08" id="example-month-input">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-month-input" class="col-2 col-form-label">End Date</label>
+                            <div class="col-10">
+                                <input class="form-control exp-end-date" value="2011-08" id="example-month-input">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-2 col-form-label">Place</label>
+                            <div class="col-10">
+                                <input class="form-control place" type="text" value="Artisanal kale"
+                                    id="example-text-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Job Description</label>
+                            <div class="col-sm-4 well">
+                                <textarea class="form-control jobdescription" id="text" name="text"
+                                    placeholder="Type in your message" rows="3">
+                            </textarea>
+                                <h6 class="pull-right" id="count_message2"></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="technical skills">
+                    <h4>TECHNICAL SKILLS</h4>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Web Development</label>
+                        <div class="col-sm-4 well">
+                            <textarea class="form-control skills" id="text" name="text"
+                                placeholder="Type in your message" rows="3">
+                        </textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Programming Languages</label>
+                        <div class="col-sm-4 well">
+                            <textarea class="form-control skills" id="text" name="text"
+                                placeholder="Type in your message" rows="3">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Management</label>
+                        <div class="col-sm-4 well">
+                            <textarea class="form-control skills" id="text" name="text"
+                                placeholder="Type in your message" rows="3">
+                                </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div id="languages">
+                        <h4>LANGUAGES</h4>
+                        <div class="form-group">
+                                <div class="col-sm-4 well">
+                                    <textarea class="form-control languages" id="text" name="text"
+                                        placeholder="Type in your message" rows="3">
+                                        </textarea>
+                                </div>
+                            </div>
+                    </div>
+                <div id="formation">
+                    <h4>FORMATION</h4>
                     <div class="form-group row">
                         <label for="example-month-input" class="col-2 col-form-label">Start Date</label>
                         <div class="col-10">
-                            <input class="form-control startdate"  value="2011-08" id="example-month-input">
+                            <input class="form-control startdate" type="date" id="example-month-input">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="example-month-input" class="col-2 col-form-label">End Date</label>
                         <div class="col-10">
-                            <input class="form-control enddate"  value="2011-08" id="example-month-input">
+                            <input class="form-control enddate" type="date" id="example-month-input">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-2 col-form-label">Diploma</label>
+                        <div class="col-10">
+                            <input class="form-control diploma" type="text" value="Artisanal kale"
+                                id="example-text-input">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-2 col-form-label">School</label>
+                        <div class="col-10">
+                            <input class="form-control school" type="text" value="Artisanal kale"
+                                id="example-text-input">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-2 col-form-label">Place</label>
+                        <div class="col-10">
+                            <input class="form-control place" type="text" value="Artisanal kale"
+                                id="example-text-input">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Job Description</label>
+                        <label for="exampleFormControlTextarea1">Details</label>
                         <div class="col-sm-4 well">
-                            <textarea class="form-control jobdescription" id="text" name="text" 
+                            <textarea class="form-control details" id="text" name="text" type="text"
                                 placeholder="Type in your message" rows="3">
-                            </textarea>
+                        </textarea>
                             <h6 class="pull-right" id="count_message2"></h6>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="competences">
-                <h4>COMPETENCES</h4>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Skills</label>
-                    <div class="col-sm-4 well">
-                        <textarea class="form-control skills" id="text" name="text"  placeholder="Type in your message"
-                            rows="3">
-                        </textarea>
-                    </div>
-                </div>
-            </div>
-            <div id="formation">
-                <h4>FORMATION</h4>
-                <div class="form-group row">
-                    <label for="example-month-input" class="col-2 col-form-label">Start Date</label>
-                    <div class="col-10">
-                        <input class="form-control startdate" type="date"  id="example-month-input">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="example-month-input" class="col-2 col-form-label">End Date</label>
-                    <div class="col-10">
-                        <input class="form-control enddate" type="date"  id="example-month-input">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">Diploma</label>
-                    <div class="col-10">
-                        <input class="form-control diploma" type="text" value="Artisanal kale" id="example-text-input">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">School</label>
-                    <div class="col-10">
-                        <input class="form-control school" type="text" value="Artisanal kale" id="example-text-input">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">Place</label>
-                    <div class="col-10">
-                        <input class="form-control place" type="text" value="Artisanal kale" id="example-text-input">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Details</label>
-                    <div class="col-sm-4 well">
-                        <textarea class="form-control details" id="text" name="text" type="text" placeholder="Type in your message"
-                            rows="3">
-                        </textarea>
-                        <h6 class="pull-right" id="count_message2"></h6>
-                    </div>
-                </div>
-            </div>
-            <div id="infos">
-                <h4>INFOS</h4>
-                <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">other info</label>
-                    <div class="col-10">
-                        <input class="form-control otherinfo" type="text" value="Artisanal kale"
-                            id="example-text-input">
-                    </div>
-                </div>
 
-                <div class="form-group row">
-                    <label for="example-email-input" class="col-2 col-form-label">Email</label>
-                    <div class="col-10">
-                        <input class="form-control email" type="email" value="bootstrap@example.com"
-                            id="example-email-input">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
-                    <div class="col-10">
-                        <input class="form-control mobilenumber" type="number" placeholder="Enter Mobile number"
-                            id="example-tel-input">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control addressline" id="inputAddress"
-                            placeholder="1234 Main St">
-                    </div>
-
-                    <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="number" class="form-control zip" id="inputZip">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control city" id="inputCity">
-                    </div>
-                </div>
-            </div>
-            <div id="hobbies">
-                <h4>CENTRES D'INTÉRÊTS</h4>
-                <div class="col-sm-4 well">
-                    <textarea class="form-control hobbies" id="hobbies" placeholder="Type in your hobbies" rows="3">
+                <div id="hobbies">
+                    <h4>CENTRES D'INTÉRÊTS</h4>
+                    <div class="col-sm-4 well">
+                        <textarea class="form-control hobbies" id="hobbies" placeholder="Type in your hobbies" rows="3">
                             </textarea>
-                    <h6 class="pull-right" id="count_message3"></h6>
+                        <h6 class="pull-right" id="count_message3"></h6>
+                    </div>
                 </div>
+                <button type="button" class="btn btn-info submit" id="submitBtn">Submit</button>
             </div>
-            <button type="button" class="btn btn-info submit" id="submitBtn">Submit</button>
-        </div>
 
     </form>
 
     <footer class="spacer">
         <div class="row">
-                <div class="spacer col-sm-3 col-md-6">
-                    <a href="https://fr.wikipedia.org/wiki/Bisounours" target="_blank"><p id="foot1">Qui sommes-nous ?</a><br><a href="https://slack.com" target="_blank">Contact</p></a>
-                </div>
-                
-                <div class="spacer col-sm-3 col-md-6" id="foot2">
-                    <a href="https://github.com/" target="_blank"><image class="image float-right" nom="LogoGitHub" src=Image/LogoGithub.png alt="LogoGitHub" title="LogoGitHub" style="margin-right:10px;"/></a>
-                    <a href="https://developer.mozilla.org/fr/" target="_blank"><image class="image float-right" nom="LogoMozilla" src=Image/LogoMozilla.png alt="LogoMozilla" title="LogoMozilla"  style="margin-right:10px;"/></a>
-                    <a href="https://www.youtube.com/watch?v=tFOaxRu5afo" target="_blank"><image class="image float-right" nom="LogoPouce" src=Image/LogoPouce.png alt="LogoPouce" title="LogoPouce" style="margin-right:10px;"/></a>
-                </div>
+            <div class="spacer col-sm-3 col-md-6">
+                <a href="https://fr.wikipedia.org/wiki/Bisounours" target="_blank">
+                    <p id="foot1">Qui sommes-nous ?
+                </a><br><a href="https://slack.com" target="_blank">Contact</p></a>
             </div>
+
+            <div class="spacer col-sm-3 col-md-6" id="foot2">
+                <a href="https://github.com/" target="_blank">
+                    <image class="image float-right" nom="LogoGitHub" src=Image/LogoGithub.png alt="LogoGitHub"
+                        title="LogoGitHub" style="margin-right:10px;" /></a>
+                <a href="https://developer.mozilla.org/fr/" target="_blank">
+                    <image class="image float-right" nom="LogoMozilla" src=Image/LogoMozilla.png alt="LogoMozilla"
+                        title="LogoMozilla" style="margin-right:10px;" /></a>
+                <a href="https://www.youtube.com/watch?v=tFOaxRu5afo" target="_blank">
+                    <image class="image float-right" nom="LogoPouce" src=Image/LogoPouce.png alt="LogoPouce"
+                        title="LogoPouce" style="margin-right:10px;" /></a>
+            </div>
+        </div>
 
         <div class="row" id="foot3">
             <p>&copy 2019 CV2Geny - Tous droits réservés - Mentions Légales - Confidentialité</p>
@@ -249,7 +279,7 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="form.js"></script>
     <!-- Javascript Ccile-->
-<script type="text/javascript" src="CV.js"></script>
+    <script type="text/javascript" src="CV.js"></script>
 </body>
 
 </html>

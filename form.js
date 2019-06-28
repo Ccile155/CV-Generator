@@ -30,9 +30,4 @@ $('#text').keyup(function() {
 
 
 
-$(document).ready(function(){
-  $("#submitBtn").click(function(){        
-      $("#myForm").submit(); 
-  });
-});
-  
+
