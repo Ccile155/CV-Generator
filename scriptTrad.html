@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Test traduction api</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
+</head>
+<body>
+
+<div>
+						    		
+<form name="langue" method="get">
+						    		<label for="langue"> Langue </label>
+						    		<select id="langue" class="form-control" name="langue" id="langue">
+        								<option selected value="en">Anglais</option>
+        								<option value="es">Espagnol</option>
+        								<option value="ru">Russe</option>
+        								<option value="it">Italien</option>
+        								<option value="zh">Chinois</option>
+     								</select>
+   <button type="submit" class="btn btn-primary trad">Envoyer</button>
+   <p id="trad"> </p> 
+    </form> <button id="button1">Traduire</button>   								
+						   		</div>
+
+<p class="text">Bonjour comment vas tu ? Ceci est un texte de test pour la traduction</p>
+
+<p class="text">Voici le deuxieme paragraphe </p>
+<p class="text">et on termine avec le troisieme</p>
+
+
+<div id="retourApi"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="scriptTrad.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+	"first-name": "John",
+	"last-name": "Smith",
+	"role-title": "Developer",
+	"email": "John.Smith@gmail.com",
+	"address": "999 chemin du Hell, 99999, Heaven",
+	"phone": "+99 9 99 99 99 99",
+	"forwords": "Je suis Dieux",
+	"experiences": 
+	[
+		{
+			"exp-header": "Professional experiences",
+			"exp-items": 
+			[
+				{
+					"exp": 
+					{ 
+						"exp-role": "Engineer",
+						"exp-company": "Heaven Co.",
+						"exp-start-date": "00/00/00", 
+						"exp-end-date": "99/99/99", 
+						"exp-place": "Heaven",
+						"exp-job-detail": "Do nothing"		
+					}
+				}
+			]
+		}
+	],
+
+	"components": 
+	[
+		{
+			"comp-header": "Technical skills",
+			"comp-items": 
+			[
+				{
+					"comp-item-field": "Web development",
+					"comp-item-value": "html, css, javascript"
+				}
+			]
+		}
+	]
+}
