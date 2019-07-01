@@ -41,8 +41,6 @@
           </div>
         </nav>
           
-            <input class="spacer" type="button" value="getData" id="clickme">
-
             <button type="button" onclick="printJS({
                 printable: 'mainContainer',
                 type:'html',
@@ -60,7 +58,7 @@
             <div class="containerx page" id="mainContainer">
                 <div class="rowx header">
                     <div class="colx info-person">
-                        <div class="container">
+                        <div class="containerx">
                             <div class="rowx">
                                 <span class="first-name-data"></span>
                                 <span class="last-name-data"></span>
@@ -91,7 +89,7 @@
                 </div>
 
                 <div class="rowx body">
-                    <div class="colx column-left">
+                    <div class="colx column-left" id="colx-column-left">
                         <div class="containerx forwords">
                             <span class="forwords-data"></span>
                         </div>
@@ -186,7 +184,7 @@
                         </div>
                     </div>
                     
-                    <div class="colx column-right">
+                    <div class="colx column-right" id="colx-column-right">
                         <div class="containerx component">
                             <div class="containerx comp-header">
                                 <span class="comp-header-data">Technical skills</span>                        
