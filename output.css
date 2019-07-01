@@ -168,6 +168,6 @@ span {
     padding: 3px;
 }
 
-#css-properties table, #css-properties td {
+#css-properties tr {
     border: 1px solid;
 }
