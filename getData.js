@@ -1,79 +1,130 @@
-$(function() { 
-       $('#clickme').click(function() {
 
-              $.ajax({
-                     url: 'cv.json',
-                     dataType: 'json',
-                     success: function(data) {
+$( document ).ready(function() {
+       $.ajax({
+              url: 'cv.json',
+              dataType: 'json',
+              success: function(data) {
 
-                            console.log(data);
-                            
-                            //RETRAVING HEADER INFORMATION
-                            $(".first-name-data").append(data["first-name"]);
-                            $(".last-name-data").append(data["last-name"]);
-                            $(".role-title-data").append(data["role-title"]);
-                            $(".email-data").append(data["email"]);
-                            $(".address-data").append(data["address"]);
-                            $(".phone-data").append(data["phone"]);
-                            $(".forwords-data").append(data["forwords"]);
+                     //CLEANING ELEMENTS
+                     $("#colx-column-left").empty();
+                     $("#colx-column-right").empty();
+                     
+                     //RETRAVING HEADER INFORMATION
+                     $(".first-name-data").append(data["first-name"]);
+                     $(".last-name-data").append(data["last-name"]);
+                     $(".role-title-data").append(data["role-title"]);
+                     $(".email-data").append(data["email"]);
+                     $(".address-data").append(data["address"]);
+                     $(".phone-data").append(data["phone"]);
+                     $(".forwords-data").append(data["forwords"]);
 
-                            //RETRAVING PROFESSIONAL EXPERIENCE INFORMATION
+                     //RETRAVING PROFESSIONAL EXPERIENCE INFORMATION
 
-                            //RETRAVING TECHNICAL SKILLS INFORMATION
-                            for(var i = 0; i < (data.components).length; i++){
+                     var newElement = 0;
+                     var newInnerElement = 0;
 
-                                   var arr = data.components[i];
+                     if((data.experiences).length > 0){
 
-                                   if(arr["comp-header"] === "Technical skills"){
-                                          //alert("HERE");
-                                   }
-                                   else if(arr["comp-header"] === "Languages"){
-                                          alert("HERE");
-                                   }
-                                   else if(arr["comp-header"] === "Hobbies"){
-                                          alert("HERE");
-                                   }
+                            for(var i = 0; i < (data.experiences).length; i++, newElement++){
+
+                                   var typeExperience = data.experiences[i];
+
+                                   $(".colx.column-left").append('<div class="containerx experiences" id="experiences-'+newElement+'"></div>');
+
+                                   $("#experiences-"+newElement).append('<div class="containerx exp-header" id="exp-header-'+newElement+'"></div>');
+
+                                   $("#exp-header-"+newElement).append('<span class="exp-header-data">'+ typeExperience["exp-header"] +'</span>');
+
+                                   var tmp = typeExperience["exp-items"];
                                    
-                            }
+                                   for(var j = 0; j < tmp.length; j++, newInnerElement++){
 
-/*                             $(".last").append(data["last"]);
-                            $(".last").append(data["last"]);
-                            $(".last").append(data["last"]);
-                            $(".last").append(data["last"]);
-                            $(".last").append(data["last"]);
-                            $(".last").append(data["last"]); */
-/*                             
-                            var items = [];
-                            $.each(data, function(key, val) {
+                                          tmp = tmp[j];
+                                          var detailExperience = tmp["exp"];
 
-                                   items.push('<li id="' + key + '">' + val + '</li>');    
+                                          $("#experiences-"+newElement).append('<div class="containerx exp" id="exp-'+newInnerElement+'"></div>');
 
-                            });
-
-                            $('<ul/>', {
-                                   'class': 'interest-list',
-                                   html: items.join('')
-                            }).appendTo('body'); */
-                     },
-                     statusCode: {
-                            404: function() {
-                                   alert('There was a problem with the server. Try again soon!');
+                                          $("#exp-"+newInnerElement).append('<div class="rowx exp-title" id="row-exp-title-'+newInnerElement+'"></div>');
+                                          
+                                          $("#row-exp-title-"+newInnerElement).append('<span class="exp-role-data">'+ detailExperience["exp-role"] +'</span>');
+                                          $("#row-exp-title-"+newInnerElement).append('<span class="exp-company-data">'+ detailExperience["exp-company"] +'</span>');
+                                          
+                                          $("#exp-"+newInnerElement).append('<div class="rowx exp-time-place" id="row-exp-time-place-'+newInnerElement+'"></div>');
+                                          
+                                          $("#row-exp-time-place-"+newInnerElement).append('<span class="exp-from-data">'+ detailExperience["exp-start-date"] +'</span>');
+                                          $("#row-exp-time-place-"+newInnerElement).append('<span class="exp-to-data">'+ detailExperience["exp-end-date"] +'</span>');
+                                          $("#row-exp-time-place-"+newInnerElement).append('<span class="exp-place-data">'+ detailExperience["exp-place"] +'</span>');
+                                          
+                                          $("#exp-"+newInnerElement).append('<div class="rowx exp-description" id="row-exp-description-'+newInnerElement+'"></div>');
+                                          
+                                          $("#row-exp-description-"+newInnerElement).append('<span class="exp-description-data">'+ detailExperience["exp-job-detail"] +'</span>');
+                                   }
                             }
                      }
-              });
+
+                     //RETRAVING SKILLS INFORMATION
+                     
+                     newElement = 0;
+                     newInnerElement = 0;
+
+                     if((data.components).length > 0){
+
+                            for(var i = 0; i < (data.components).length; i++, newElement++){
+
+                                   var generalSkill = data.components[i];
+
+                                   $(".colx.column-right").append('<div class="containerx component" id="component-'+newElement+'"></div>');
+
+                                   $("#component-"+newElement).append('<div class="containerx comp-header" id="comp-header-'+newElement+'"></div>');
+
+                                   $("#comp-header-"+newElement).append('<span class="comp-header-data">'+ generalSkill["comp-header"] +'</span>');
+                                   
+                                   var tmp = generalSkill["comp-items"];
+
+                                   for(var j = 0; j < tmp.length; j++, newInnerElement++){
+
+                                          var detailSkill = tmp[j];
+
+                                          $("#component-"+newElement).append('<div class="containerx comp-items" id="comp-items-'+newInnerElement+'"></div>');
+                                          $("#comp-items-"+newInnerElement).append('<div class="rowx comp-item" id="row-comp-items-'+newInnerElement+'"></div>');
+                                          
+                                          $("#row-comp-items-"+newInnerElement).append('<span class="comp-item-field-data">'+ detailSkill["comp-item-field"] +'</span>');
+                                          $("#row-comp-items-"+newInnerElement).append('<span class="comp-item-value-data">'+ detailSkill["comp-item-value"] +'</span>');
+                                   }
+                            }
+                     }
+              },
+              statusCode: {
+                     404: function() {
+                            alert('There was a problem with the server. Try again soon!');
+                     }
+              }
        });
 });
 
-/* function run(){
+                            //RETRAVING LEFT COLUMN INFORMATION
+/*                             if((data.components).length > 0){
 
-       var z = document.querySelectorAll('tr:nth-child(odd)');
-  
-       var w = document.querySelectorAll('tr td:first-child');
+                                   for(var i = 0; i < (data.components).length; i++){
+
+                                          var generalSkill = data.components[i];
+
+                                          $(".col.column-right").append('<div class="container component"></div>');
+                                          $(".container.component").append('<div class="container comp-header"></div>');
+
+                                          $(".container.comp-header").append('<span class="comp-header-data">'+ generalSkill["comp-header"] +'</span>');
+                                          
+                                          var tmp = generalSkill["comp-items"];
+
+                                          for(var i = 0; i < tmp.length; i++){
+
+                                                 var detailSkill = tmp[i];
        
-       var w = document.querySelectorAll("div[name*=eme]");
-       
-       var w = document.querySelector("p:first-child");
-       w.style.innerHTML = "Cambio";
-       
-       
-   } */
+                                                 $(".container.component").append('<div class="container comp-items"></div>');
+                                                 $(".container.comp-items").append('<div class="row comp-item"></div>');
+                                                 
+                                                 $(".row.comp-item").append('<span class="comp-item-field-data">'+ detailSkill["comp-item-field"] +'</span>');
+                                                 $(".row.comp-item").append('<span class="comp-item-value-data">'+ detailSkill["comp-item-value"] +'</span>');
+                                          }
+                                   }
+                            } */

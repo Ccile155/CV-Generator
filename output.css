@@ -167,3 +167,7 @@
 span {
     padding: 3px;
 }
+
+#css-properties tr {
+    border: 1px solid;
+}
