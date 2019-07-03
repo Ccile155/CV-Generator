@@ -61,7 +61,7 @@
                 </div>
                 <div class="form-heading">
                     <label for="formGroupExampleInput">Role</label>
-                    <input type="text" class="form-control role" id="jobtitle" placeholder="Example Developpeur">
+                    <input type="text" class="form-control role" id="role-title" placeholder="Example Developer">
                 </div>
                 <br>
 
@@ -69,22 +69,22 @@
                     <div class="form-group row">
                         <label for="example-email-input" class="col-2 col-form-label">Email</label>
                         <div class="col-10">
-                            <input class="form-control email" type="email" value="bootstrap@example.com"
-                                id="example-email-input">
+                            <input class="form-control email" type="email" placeholder="bootstrap@example.com"
+                                id="email">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="example-tel-input" class="col-2 col-form-label">Phone number</label>
                         <div class="col-10">
-                            <input class="form-control phonenumber" type="number" placeholder="Enter Mobile number"
-                                id="example-tel-input">
+                            <input class="form-control phonenumber" type="number" placeholder="Enter Phone number"
+                                id="phone-number">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="example-tel-input" class="col-2 col-form-label">Address</label>
                         <div class="col-10">
-                            <input class="form-control address" type="number" placeholder="25 Main ST 56621 NYC"
-                                id="example-tel-input">
+                            <input class="form-control address" type="text" placeholder="25 Main ST 56621 NYC"
+                                id="address">
                         </div>
                     </div>
                 </div>
@@ -100,44 +100,47 @@
                 </div>
                 <div id="experience-pro">
                     <h4>Professional Experiences</h4>
+                    
+                    <h3>First Experience</h3>
+
                     <div class="input-container">
                         <div class="form-group row">
                             <label for="example-text-input" class="col-2 col-form-label">Role</label>
                             <div class="col-10">
-                                <input class="form-control exp-role" type="text" value="Artisanal kale"
-                                    id="example-text-input">
+                                <input class="form-control exp-role" type="text" placeholder="ex:Web Developer"
+                                    id="experience-role">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-text-input" class="col-2 col-form-label">company</label>
                             <div class="col-10">
-                                <input class="form-control exp-company" type="text" value="Artisanal kale"
-                                    id="example-text-input">
+                                <input class="form-control exp-company" type="text" placeholder="ex:Apple Inc"
+                                    id="experience_company">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-month-input" class="col-2 col-form-label">Start Date</label>
                             <div class="col-10">
-                                <input class="form-control exp-start-date" value="2011-08" id="example-month-input">
+                                <input class="form-control exp-start-date" placeholder="0000-00" id="experience_start_date">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-month-input" class="col-2 col-form-label">End Date</label>
                             <div class="col-10">
-                                <input class="form-control exp-end-date" value="2011-08" id="example-month-input">
+                                <input class="form-control exp-end-date" placeholder="0000-00" id="experience_end_date">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-text-input" class="col-2 col-form-label">Place</label>
                             <div class="col-10">
-                                <input class="form-control place" type="text" value="Artisanal kale"
-                                    id="example-text-input">
+                                <input class="form-control place" type="text" placeholder="ex:Grenoble"
+                                    id="experience_place">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Job Description</label>
+                            <label for="exampleFormControlTextarea1">Job Details</label>
                             <div class="col-sm-4 well">
-                                <textarea class="form-control jobdescription" id="text" name="text"
+                                <textarea class="form-control jobdetails" id="experience_details" name="text"
                                     placeholder="Type in your message" rows="3">
                             </textarea>
                                 <h6 class="pull-right" id="count_message2"></h6>
@@ -148,94 +151,25 @@
                 <div id="technical skills">
                     <h4>TECHNICAL SKILLS</h4>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Web Development</label>
+                        <div class="form-group row">
+                            <div class="col-10">
+                                <input class="form-control place" type="text" placeholder="Heading-ex:Web Developer"
+                                    id="subheading_components">
+                            </div> 
+                        </div><br>
                         <div class="col-sm-4 well">
-                            <textarea class="form-control skills" id="text" name="text"
-                                placeholder="Type in your message" rows="3">
+                            <textarea class="form-control skills" id="dev_languages" name="text"
+                                placeholder="Type in programming languages known" rows="3">
                         </textarea>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Programming Languages</label>
-                        <div class="col-sm-4 well">
-                            <textarea class="form-control skills" id="text" name="text"
-                                placeholder="Type in your message" rows="3">
-                            </textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Management</label>
-                        <div class="col-sm-4 well">
-                            <textarea class="form-control skills" id="text" name="text"
-                                placeholder="Type in your message" rows="3">
-                                </textarea>
-                        </div>
-                    </div>
+                    
+                    
                 </div>
-                <div id="languages">
-                        <h4>LANGUAGES</h4>
-                        <div class="form-group">
-                                <div class="col-sm-4 well">
-                                    <textarea class="form-control languages" id="text" name="text"
-                                        placeholder="Type in your message" rows="3">
-                                        </textarea>
-                                </div>
-                            </div>
-                    </div>
-                <div id="formation">
-                    <h4>FORMATION</h4>
-                    <div class="form-group row">
-                        <label for="example-month-input" class="col-2 col-form-label">Start Date</label>
-                        <div class="col-10">
-                            <input class="form-control startdate" type="date" id="example-month-input">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="example-month-input" class="col-2 col-form-label">End Date</label>
-                        <div class="col-10">
-                            <input class="form-control enddate" type="date" id="example-month-input">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="example-text-input" class="col-2 col-form-label">Diploma</label>
-                        <div class="col-10">
-                            <input class="form-control diploma" type="text" value="Artisanal kale"
-                                id="example-text-input">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="example-text-input" class="col-2 col-form-label">School</label>
-                        <div class="col-10">
-                            <input class="form-control school" type="text" value="Artisanal kale"
-                                id="example-text-input">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="example-text-input" class="col-2 col-form-label">Place</label>
-                        <div class="col-10">
-                            <input class="form-control place" type="text" value="Artisanal kale"
-                                id="example-text-input">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Details</label>
-                        <div class="col-sm-4 well">
-                            <textarea class="form-control details" id="text" name="text" type="text"
-                                placeholder="Type in your message" rows="3">
-                        </textarea>
-                            <h6 class="pull-right" id="count_message2"></h6>
-                        </div>
-                    </div>
-                </div>
+        
+            
 
-                <div id="hobbies">
-                    <h4>CENTRES D'INTÉRÊTS</h4>
-                    <div class="col-sm-4 well">
-                        <textarea class="form-control hobbies" id="hobbies" placeholder="Type in your hobbies" rows="3">
-                            </textarea>
-                        <h6 class="pull-right" id="count_message3"></h6>
-                    </div>
-                </div>
+            
                 <button type="button" class="btn btn-info submit" id="submitBtn">Submit</button>
             </div>
 
