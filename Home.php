@@ -12,50 +12,11 @@
 
 <body class="container">
 	<header>
-<!-- 		<h1>Générez votre CV à l'infini</h1> -->
 
-<!-- 		<nav class="navbar navbar-expand-lg navbar-light bg-info">
-			<a class="navbar-brand" href="#"><img src="Image/logoCV.png" style="height:40px;">CV Creator</a>
-		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span></button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav"> 
-					<a class="nav-item nav-link" href="#">Templates</a>
-					<a class="nav-item nav-link" href="#">Formulaire</a>
-					<a class="nav-item nav-link" href="#">CV</a>
-		   		</div>
-		  	</div>
-		</nav> -->
-
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a class="navbar-brand" href="CV.html"><img src="Image/logoCV.png" style="height:40px;">CV Creator</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-		    <ul class="navbar-nav">
-		      <li class="nav-item">
-		        <a class="nav-link" href="form.html">Formulaire</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="output.html">Mon CV</a>
-		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Couleurs
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          <a class="dropdown-item" href="#" id="30A2B8"><img src="Image/info.png" alt="info" style="height:15px;"> Info</a>
-		          <a class="dropdown-item" href="#" id="ccffee"><img src="Image/mint.png" alt="Mint"> Mint</a>
-		          <a class="dropdown-item" href="#" id="FBC10A"><img src="Image/warning.png" alt="warning" style="height:15px;"> Warning</a>
-		          <a class="dropdown-item" href="#" id="FFCCFF"><img src="Image/pink.png" alt="pink"> Pink</a>
-		          <a class="dropdown-item" href="#" id="F8F9FA"><img src="Image/light.png" alt="light"> Light</a>
-
-		        </div>
-		      </li>
-		    </ul>
-		  </div>
-		</nav>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ NAV $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<?php 
+include('Nav.html');
+ ?> 
 
 	</header>
 
@@ -109,38 +70,15 @@
 				  </div>
 				</div>
 
-
 <!-- 	<img src="Image/CV1.png" alt="CV1 Swiss">
 	<img src="Image/CV2.png" alt="CV2 Serif">
 	<img src="Image/CV3.png"  alt="CV3 Spearmint"> -->
-
 		</div>
 
-
-	<footer class="spacer">
-		<div class="row">
-<!-- 			<div class="col-6 foot" style="padding: 20px 0px 0px 150px;">
-				<p>Qui sommmes nous ?</p>
-			</div>
-			<div class="col-6 foot" style="padding: 20px 150px 0px 0px;">
-				<p>Contact</p>
-			</div>
-		</div> -->
-				<div class="spacer col-sm-3 col-md-6">
-					<a href="https://fr.wikipedia.org/wiki/Bisounours" target="_blank"><p id="foot1">Qui sommes-nous ?</a><br><a href="https://slack.com" target="_blank">Contact</p></a>
-				</div>
-				
-				<div class="spacer col-sm-3 col-md-6" id="foot2">
-					<a href="https://github.com/" target="_blank"><image class="image float-right" nom="LogoGitHub" src=Image/LogoGithub.png alt="LogoGitHub" title="LogoGitHub" style="margin-right:10px;"/></a>
-					<a href="https://developer.mozilla.org/fr/" target="_blank"><image class="image float-right" nom="LogoMozilla" src=Image/LogoMozilla.png alt="LogoMozilla" title="LogoMozilla"  style="margin-right:10px;"/></a>
-					<a href="https://www.youtube.com/watch?v=tFOaxRu5afo" target="_blank"><image class="image float-right" nom="LogoPouce" src=Image/LogoPouce.png alt="LogoPouce" title="LogoPouce" style="margin-right:10px;"/></a>
-				</div>
-			</div>
-
-		<div class="row" id="foot3">
-			<p>&copy 2019 CV Creator - Tous droits réservés - Mentions Légales - Confidentialité</p>
-		</div>
-	</footer>
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<?php 
+include('Footer.html');
+ ?> 
 
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
